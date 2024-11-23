@@ -21,7 +21,7 @@ with open('scaler.pkl', 'rb') as file:
 
 
 # Streamlit app
-st.title('Customer Chur Prediction')
+st.title('Customer Churn Prediction')
 geography = st.selectbox('Geography', onehot_encoder_geo.categories_[0])
 gender = st.selectbox('Gender', label_encoder_gender.classes_)
 age = st.slider('Age', 18, 92)
